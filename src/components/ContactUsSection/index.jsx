@@ -5,18 +5,20 @@ export default function ContactUs() {
   return (
     <section className=" bg-[#ACE8DA]">
       <div className="container mx-auto">
-        <div className=" max-w-5xl lg:mx-auto w-full mx-5 py-10 flex items-center lg:flex-row flex-col gap-8 ">
-          <div className="lg:basis-2/5 w-full">
-            <div className=" space-y-3">
-              <Label>Contact</Label>
-              <h1 className="lg:text-4xl text-2xl font-semibold">
-                Get in touch with us
-              </h1>
-              <p>
-                Leverage agile frameworks to provide a robust synopsis for
-                strategy foster collaborative thinking to further the overall
-                value.
-              </p>
+        <div className=" max-w-5xl mx-auto px-5 py-10 flex items-center lg:flex-row flex-col gap-12 ">
+          <div className="lg:basis-2/5 ">
+            <div className=" space-y-10">
+              <div className="space-y-3">
+                <Label>Contact</Label>
+                <h1 className="lg:text-4xl text-2xl font-semibold">
+                  Get in touch with us
+                </h1>
+                <p className="text-justify">
+                  Leverage agile frameworks to provide a robust synopsis for
+                  strategy foster collaborative thinking to further the overall
+                  value.
+                </p>
+              </div>
               <div className="space-y-6">
                 <div className="flex lg:flex-row flex-col lg:text-left text-center items-center gap-4 ">
                   <Email />
@@ -44,9 +46,8 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-          <div className="lg:basis-3/5 basis-full">
-            <Form />
-          </div>
+
+          <Form />
         </div>
       </div>
     </section>
@@ -54,33 +55,33 @@ export default function ContactUs() {
 }
 function Form() {
   return (
-    <form className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+    <form className="lg:basis-3/5 lg:grid flex flex-col w-full lg:grid-cols-2 grid-cols-1 gap-4">
       <input
         type="text"
-        className="border-2 py-2 px-4 placeholder:text-black bg-transparent"
+        className=" border py-2 px-4 placeholder:text-black bg-transparent"
         placeholder="Your Name*"
       />
       <input
         type="email"
-        className="border-2 py-2 px-4 placeholder:text-black bg-transparent"
+        className=" border py-2 px-4 placeholder:text-black bg-transparent"
         placeholder="Email*"
       />
       <input
         type="text"
-        className="border-2 py-2 px-4 placeholder:text-black bg-transparent"
+        className=" border py-2 px-4 placeholder:text-black bg-transparent"
         placeholder="Phone Number*"
       />
       <input
         type="text"
-        className="border-2 py-2 px-4 placeholder:text-black bg-transparent"
+        className=" border py-2 px-4 placeholder:text-black bg-transparent"
         placeholder="City*"
       />
       <textarea
-        className="border-2 py-2 px-4 placeholder:text-black bg-transparent resize-none lg:col-span-2"
+        className=" border py-2 px-4 placeholder:text-black bg-transparent resize-none lg:col-span-2"
         placeholder="Your Message*"
         rows={5}
       ></textarea>
-      <button className="bg-[#161616] py-3 px-4 text-white w-3/5 ">
+      <button className="bg-[#161616] py-3 px-4 text-white w-3/5 lg:mx-0 mx-auto">
         Submit Message
       </button>
     </form>

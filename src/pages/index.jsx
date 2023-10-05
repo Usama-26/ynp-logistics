@@ -76,7 +76,9 @@ function Hero() {
                 <div className=" absolute w-full h-full top-0  bg-black/50 flex items-center">
                   <div className="container mx-auto flex items-center">
                     <div className="lg:space-y-4 space-y-2 mx-5 lg:mx-0 lg:basis-5/12">
-                      <Label>Logistics & Supply Chain Solutions</Label>
+                      <p className="bg-[#041C3799] text-sm lg:text-base inline-block px-2 border-l-4 border-primary">
+                        Logistics & Supply Chain Solutions
+                      </p>
                       <h1 className="lg:text-6xl text-2xl font-semibold">
                         Your Gateway to any Destination in the World
                       </h1>
