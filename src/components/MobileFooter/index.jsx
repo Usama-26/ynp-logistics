@@ -17,7 +17,7 @@ export default function MobileFooter() {
             alt="Y & P Logo"
             className="w-32 mb-5"
           />
-          <p className="text-justify mb-5">
+          <p className="text-justify text-sm mb-5">
             Streamlining Global Logistics Solutions for Seamless Supply Chains.
             Delivering Efficiency and Reliability Worldwide.
           </p>
@@ -64,7 +64,7 @@ export default function MobileFooter() {
             </li>
           </ul>
           <div className="mb-5">
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-sm">
               <h3 className="text-xl font-bold mb-5">Contact</h3>
               <li className="flex gap-2">
                 <MdOutlineMail className="w-6 h-6" />
@@ -85,7 +85,7 @@ export default function MobileFooter() {
               </li>
             </ul>
           </div>
-          <div className="mb-5">
+          <div className="mb-5 ">
             <h3 className="text-xl font-bold mb-5">Follow us</h3>
             <div className="flex gap-4">
               <Link href={"/"}>

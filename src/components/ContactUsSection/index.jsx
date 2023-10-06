@@ -3,10 +3,10 @@ import { Label } from "../Label";
 
 export default function ContactUs() {
   return (
-    <section className="py-20">
+    <section id="contact" className="pb-24">
       <div className="bg-[#ACE8DA]">
         <div className="container mx-auto">
-          <div className=" max-w-5xl mx-auto px-5 py-10 flex items-center lg:flex-row flex-col gap-12 ">
+          <div className=" max-w-5xl mx-auto px-5 py-10 flex items-center lg:flex-row flex-col lg:gap-24 gap-12  ">
             <div className="lg:basis-2/5 ">
               <div className=" space-y-10">
                 <div className="space-y-3">

@@ -28,10 +28,10 @@ export default function Header() {
 
 const links = [
   { title: "Home", path: "/" },
-  { title: "About", path: "/about" },
-  { title: "Services", path: "/services" },
-  { title: "Management Team", path: "/team" },
-  { title: "Contact", path: "/contact" },
+  { title: "About", path: "/#aboutUs" },
+  { title: "Services", path: "/#services" },
+  { title: "Management Team", path: "/#team" },
+  { title: "Contact", path: "/#contact" },
 ];
 function Navigation({}) {
   return (

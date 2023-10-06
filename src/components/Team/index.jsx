@@ -3,6 +3,7 @@ import { Label } from "../Label";
 import TeamProfileCard from "../TeamProfileCard";
 import { SplideTrack } from "@splidejs/react-splide";
 import { SplideSlide } from "@splidejs/react-splide";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 export default function Team() {
   const teamMembers = [
@@ -36,7 +37,7 @@ export default function Team() {
     },
   ];
   return (
-    <section className="py-20">
+    <section id="team" className="py-20">
       <div className="container mx-auto">
         <div className="text-center space-y-4">
           <Label>Management Team</Label>
@@ -102,6 +103,14 @@ export default function Team() {
               </SplideSlide>
             </SplideTrack>
           </Splide>
+        </div>
+        <div className="max-w-5xl mx-auto flex lg:justify-end justify-center gap-2">
+          <button className="bg-primary p-2 rounded-full">
+            <HiArrowLeft className="w-6 h-6 fill-white" />
+          </button>
+          <button className="bg-primary p-2 rounded-full">
+            <HiArrowRight className="w-6 h-6 fill-white" />
+          </button>
         </div>
       </div>
     </section>

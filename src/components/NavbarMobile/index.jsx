@@ -58,10 +58,10 @@ export default function MobileNavbar() {
 }
 const links = [
   { title: "Home", path: "/" },
-  { title: "About", path: "/about" },
-  { title: "Services", path: "/services" },
-  { title: "Management Team", path: "/team" },
-  { title: "Contact", path: "/contact" },
+  { title: "About", path: "/#about" },
+  { title: "Services", path: "/#services" },
+  { title: "Management Team", path: "/#team" },
+  { title: "Contact", path: "/#contact" },
 ];
 function SidePanel({ show, togglePanel }) {
   return (
@@ -71,7 +71,7 @@ function SidePanel({ show, togglePanel }) {
       }`}
     >
       <nav className="p-4 relative top-20">
-        <ul className="list-none overflow-hidden text-center">
+        <ul className="list-none overflow-hidden divide-y divide-black/50 text-left">
           {links.map(({ title, path }, index) => {
             return (
               <li
@@ -83,7 +83,7 @@ function SidePanel({ show, togglePanel }) {
                 <Link
                   onClick={togglePanel}
                   href={path}
-                  className="font-medium focus:outline-none"
+                  className=" focus:outline-none"
                 >
                   {title}
                 </Link>

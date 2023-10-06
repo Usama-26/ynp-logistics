@@ -45,6 +45,7 @@ export default function Services() {
       <Hero />
       <ServiceSection
         data={facilitation}
+        id={"facilitation"}
         image={"/images/services/facilitation.png"}
       >
         <h1 className="lg:text-4xl text-2xl font-semibold">Facilitation</h1>
@@ -57,6 +58,7 @@ export default function Services() {
       <ServiceSection
         order={"lg:flex-row-reverse"}
         data={coordination}
+        id={"coordination"}
         image={"/images/services/coordination.png"}
       >
         <h1 className="lg:text-4xl text-2xl font-semibold">Coordination</h1>
@@ -69,6 +71,7 @@ export default function Services() {
       </ServiceSection>
       <ServiceSection
         data={consultation}
+        id={"consultation"}
         image={"/images/services/consultation.png"}
       >
         <h1 className="lg:text-4xl text-2xl font-semibold">Consultation</h1>
@@ -81,6 +84,7 @@ export default function Services() {
       </ServiceSection>
       <ServiceSection
         data={licensing}
+        id={"licensing"}
         order={"lg:flex-row-reverse"}
         image={"/images/services/air-services-licensing.png"}
       >
@@ -94,7 +98,11 @@ export default function Services() {
           16(4)(e).
         </p>
       </ServiceSection>
-      <ServiceSection data={suppliers} image={"/images/services/supplies.png"}>
+      <ServiceSection
+        id={"suppliers"}
+        data={suppliers}
+        image={"/images/services/supplies.png"}
+      >
         <h1 className="lg:text-4xl text-2xl font-semibold">Suppliers</h1>
         <p className="text-[#666C89] text-justify">
           Offering fuel supply services (jet fuel, diesel, petrol) to the SANDF,
@@ -185,9 +193,9 @@ function Hero() {
   );
 }
 
-function ServiceSection({ data, order, image, children }) {
+function ServiceSection({ id, data, order, image, children }) {
   return (
-    <section className="lg:py-20 py-10">
+    <section id={id} className="lg:py-20 py-10">
       <div className="container mx-auto">
         <div
           className={` flex lg:flex-row flex-col ${order} gap-8 lg:px-20 px-5`}

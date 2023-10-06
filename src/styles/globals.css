@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
+  html {
+    scroll-behavior: smooth;
+  }
   .bg-home-hero {
     @apply bg-[url('/images/home/bg-hero-1.jpg')] bg-cover bg-no-repeat bg-center;
   }

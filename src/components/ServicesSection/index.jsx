@@ -6,6 +6,7 @@ import {
   Supplies,
 } from "@/svgs";
 import { Label } from "../Label";
+import Link from "next/link";
 const services = [
   {
     icon: <Delivery />,
@@ -35,7 +36,7 @@ const services = [
 ];
 export default function Services() {
   return (
-    <section className="py-20 bg-[#E8E8E880]">
+    <section id="services" className="py-20 bg-[#E8E8E880]">
       <div className="container mx-auto">
         <div className="text-center space-y-4">
           <Label>Our Services</Label>
@@ -58,7 +59,9 @@ export default function Services() {
           </div>
         </div>
         <div className="text-center">
-          <button className="py-3 px-6 bg-primary text-white">Read More</button>
+          <Link href={"services"} className="py-3 px-6 bg-primary text-white">
+            Read More
+          </Link>
         </div>
       </div>
     </section>

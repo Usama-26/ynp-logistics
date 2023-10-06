@@ -76,15 +76,16 @@ function Hero() {
                 <div className=" absolute w-full h-full top-0  bg-black/50 flex items-center">
                   <div className="container mx-auto flex items-center">
                     <div className="lg:space-y-4 space-y-2 mx-5 lg:mx-0 lg:basis-5/12">
-                      <p className="bg-[#041C3799] text-sm lg:text-base inline-block px-2 border-l-4 border-primary">
+                      <p className="bg-[#041C3799] lg:text-sm text-xs inline-block px-2 border-l-4 border-primary">
                         Logistics & Supply Chain Solutions
                       </p>
                       <h1 className="lg:text-6xl text-2xl font-semibold">
                         Your Gateway to any Destination in the World
                       </h1>
                       <p className="lg:text-base text-xs">
-                        Connecting You to the World: Your Gateway to Seamless
-                        Logistics <br />
+                        Connecting You to the World:{" "}
+                        <br className="block lg:hidden" /> Your Gateway to
+                        Seamless Logistics <br />
                         Solutions for Every Destination.
                       </p>
                       <button className="bg-primary text-sm lg:text-base  lg:px-6 lg:py-3 px-4 py-2">
@@ -104,7 +105,7 @@ function Hero() {
 
 function AboutUs() {
   return (
-    <section className="py-20">
+    <section id="aboutUs" className="py-20">
       <div className="container mx-auto">
         <div className="flex lg:flex-row flex-col gap-8 lg:px-20 px-5">
           <div className="basis-1/2">

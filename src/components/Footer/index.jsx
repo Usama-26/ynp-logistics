@@ -53,35 +53,37 @@ export default function Footer() {
                     <Link href={"/"}>Home</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>About us</Link>
+                    <Link href={"/#aboutUs"}>About us</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Services</Link>
+                    <Link href={"/#services"}>Services</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Our Team</Link>
+                    <Link href={"/#team"}>Our Team</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Contact</Link>
+                    <Link href={"/#contact"}>Contact</Link>
                   </li>
                 </ul>
               </li>
               <li className="basis-1/5">
                 <ul className="space-y-4">
                   <li>
-                    <Link href={"/"}>Facilitation</Link>
+                    <Link href={"/services/#facilitation"}>Facilitation</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Coordination</Link>
+                    <Link href={"/services/#coordination"}>Coordination</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Air Service Licensing</Link>
+                    <Link href={"/services/#licensing"}>
+                      Air Service Licensing
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Consultation</Link>
+                    <Link href={"/services/#consultation"}>Consultation</Link>
                   </li>
                   <li>
-                    <Link href={"/"}>Supplies</Link>
+                    <Link href={"/services/#suppliers"}>Suppliers</Link>
                   </li>
                 </ul>
               </li>
