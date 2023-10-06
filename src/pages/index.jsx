@@ -83,9 +83,8 @@ function Hero() {
                         Your Gateway to any Destination in the World
                       </h1>
                       <p className="lg:text-base text-xs">
-                        Connecting You to the World:{" "}
-                        <br className="block lg:hidden" /> Your Gateway to
-                        Seamless Logistics <br />
+                        Connecting You to the World: Your Gateway to Seamless
+                        Logistics <br />
                         Solutions for Every Destination.
                       </p>
                       <button className="bg-primary text-sm lg:text-base  lg:px-6 lg:py-3 px-4 py-2">
