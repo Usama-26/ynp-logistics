@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className=" bg-footer text-white">
+      <div className=" footer-links bg-footer text-white">
         <div className="max-w-7xl ml-auto pb-8">
           <div className="flex py-4 gap-10 items-center">
             <div className="basis-3/12 py-1 bg-footer">
@@ -89,20 +89,20 @@ export default function Footer() {
                 <ul className="space-y-4">
                   <li className="flex gap-2">
                     <MdOutlineMail className="w-6 h-6" />
-                    <Link href={"/"}>pravesh@yplogistics.co.za</Link>
+                    <span>pravesh@yplogistics.co.za</span>
                   </li>
                   <li className="flex gap-2">
                     <FiPhone className="w-6 h-6" />
-                    <Link href={"/"}>
+                    <span>
                       Tel: +27 11 466 8681 <br /> Fax: +27 11 318 2047
-                    </Link>
+                    </span>
                   </li>
                   <li className="flex gap-2">
                     <IoLocationOutline className="w-6 h-6" />
-                    <Link href={"/"}>
+                    <span>
                       3 Monte Carlo Crescent | Kyalami <br />
                       Business Park | Kyalami Boulevard
-                    </Link>
+                    </span>
                   </li>
                 </ul>
               </li>
@@ -125,7 +125,16 @@ export default function Footer() {
         <hr className="bg-transparent border-t border-white/50" />
         <div className="  py-4 mx-auto max-w-6xl flex justify-between">
           <p>Copyright © Y & P Logistics | All Rights Reserved</p>
-          <p>Crafted by mrrobotdev.com</p>
+          <p>
+            Crafted by{" "}
+            <Link
+              href={"https://www.mrrobotdev.com"}
+              target="_blank"
+              className="hover:underline underline-offset-2"
+            >
+              mrrobotdev.com
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import { Label } from "@/components/Label";
 import WebLayout from "@/layouts/WebLayout";
+import { Email, Location, Phone } from "@/svgs";
 import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi";
 
@@ -101,6 +102,60 @@ export default function Services() {
           provision to government hospitals.
         </p>
       </ServiceSection>
+      <section className="py-20">
+        <div className="container mx-auto">
+          <div className=" max-w-5xl mx-auto px-5 py-10 flex items-center lg:flex-row flex-col-reverse gap-12 ">
+            <div className="lg:basis-1/2 ">
+              <div className=" space-y-10">
+                <div className="space-y-3">
+                  <Label>{`Let's Talk`}</Label>
+                  <h1 className="lg:text-4xl text-2xl font-semibold capitalize">
+                    You need any help? <br /> get free consultation
+                  </h1>
+                </div>
+                <div className="space-y-6">
+                  <div className="flex lg:flex-row flex-col lg:text-left text-center items-center gap-4 ">
+                    <Email />
+                    <div>
+                      <p>Email</p>
+                      <p>pravesh@yplogistics.co.za</p>
+                    </div>
+                  </div>
+                  <div className="flex lg:flex-row flex-col lg:text-left text-center items-center gap-4 ">
+                    <Phone />
+                    <div>
+                      <p>Call Us</p>
+                      <p>Tel: +27 11 466 8681 | Fax: +27 11 318 2047</p>
+                    </div>
+                  </div>
+                  <div className="flex lg:flex-row flex-col lg:text-left text-center items-center gap-4 ">
+                    <Location />
+                    <div>
+                      <p>
+                        3 Monte Carlo Crescent | Kyalami <br /> Business Park |
+                        Kyalami Boulevard
+                      </p>
+                    </div>
+                  </div>
+                  <div className="lg:text-left text-center">
+                    <button className="ml-3 py-3 px-6 bg-primary text-white">
+                      Contact us
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:basis-1/2">
+              <Image
+                src={"/images/services/cta-img.png"}
+                width={710}
+                height={606}
+                alt="CTA Image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </WebLayout>
   );
 }
@@ -132,7 +187,7 @@ function Hero() {
 
 function ServiceSection({ data, order, image, children }) {
   return (
-    <section className="py-20">
+    <section className="lg:py-20 py-10">
       <div className="container mx-auto">
         <div
           className={` flex lg:flex-row flex-col ${order} gap-8 lg:px-20 px-5`}

@@ -4,6 +4,7 @@ import { SplideTrack } from "@splidejs/react-splide";
 import { SplideSlide } from "@splidejs/react-splide";
 import { Quote, Quote2 } from "@/svgs";
 import { RiStarSFill } from "react-icons/ri";
+import { HiArrowLeft, HiArrowRight } from "react-icons/hi";
 
 export default function Testimonials() {
   return (
@@ -23,14 +24,6 @@ export default function Testimonials() {
                 arrows: false,
               }}
             >
-              {/* <div className="splide__arrows">
-                <button className="splide__arrow splide__arrow--prev">
-                  Prev
-                </button>
-                <button className="splide__arrow splide__arrow--next">
-                  Next
-                </button>
-              </div> */}
               <SplideTrack>
                 <SplideSlide>
                   <div className="flex lg:flex-row flex-col">
@@ -94,6 +87,14 @@ export default function Testimonials() {
                 </SplideSlide>
               </SplideTrack>
             </Splide>
+            <div className="flex lg:justify-end justify-center gap-2 mt-4">
+              <button className="bg-primary p-2 rounded-full">
+                <HiArrowLeft className="w-6 h-6 fill-white" />
+              </button>
+              <button className="bg-primary p-2 rounded-full">
+                <HiArrowRight className="w-6 h-6 fill-white" />
+              </button>
+            </div>
           </div>
         </div>
       </div>

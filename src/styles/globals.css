@@ -5,4 +5,7 @@
   .bg-home-hero {
     @apply bg-[url('/images/home/bg-hero-1.jpg')] bg-cover bg-no-repeat bg-center;
   }
+  .footer-links li a {
+    @apply hover:underline underline-offset-2;
+  }
 }
