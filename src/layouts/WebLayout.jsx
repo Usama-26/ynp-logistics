@@ -8,6 +8,7 @@ export default function WebLayout({ children }) {
       <Header />
       <MobileNavbar />
       {children}
+      <Footer />
     </main>
   );
 }

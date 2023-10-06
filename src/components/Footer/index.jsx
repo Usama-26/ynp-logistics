@@ -1,115 +1,131 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import Image from "next/image";
-import { FaFacebook } from "react-icons/fa6";
-import { HiLocationMarker, HiPhone, HiMail } from "react-icons/hi";
-import { MdLocationOn } from "react-icons/md";
-
+import Link from "next/link";
+import { MdOutlineMail } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
+import { FaLinkedin, FaTwitter, FaFacebook } from "react-icons/fa";
+import { IoLocationOutline } from "react-icons/io5";
 export default function Footer() {
   return (
-    <footer className="bg-background-color">
-      <div className="container px-6 py-12 mx-auto text-white">
-        <div className="grid grid-cols-1 gap-6 sm:gap-y-10 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <Image
-              src={"/images/jvh-logo@2x.png"}
-              height={105}
-              width={125}
-              alt="JVH Logo"
-            />
-
-            <p>
-              At JVH, we provide a space where creativity takes form, showcasing
-              a diverse range of visual expressions that inspire, provoke
-              thought, and evoke emotions.
-            </p>
-          </div>
-          <div>
-            <p className="text-xl">Quick Link</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              <a href="/home" class="hover:underline hover:text-primary">
-                Home
-              </a>
-              <a href="/exhibitions" class="hover:underline hover:text-primary">
-                Exhibitions
-              </a>
-              <a
-                href="/art-classes-and-studio-events"
-                class="hover:underline hover:text-primary"
-              >
-                Art Classes & Studio Events
-              </a>
-              <a href="/frameshop" class="hover:underline hover:text-primary">
-                Frameshop
-              </a>
-              <a href="/cafe" class="hover:underline hover:text-primary">
-                Cafe
-              </a>
-              <a
-                href="/exhibition-catalogue"
-                class="hover:underline hover:text-primary"
-              >
-                Exhibition Catalogue
-              </a>
+    <footer className="font-display">
+      <div className="bg-home-hero py-40"></div>
+      <div className=" bg-[#27272a] text-white">
+        <div className="max-w-7xl ml-auto">
+          <div className="flex gap-10 items-center">
+            <div className="basis-3/12 py-1 bg-footer">
+              <Image
+                src={"/images/footer-logo.png"}
+                width={180}
+                height={109}
+                alt="Y & P Logo"
+                className="w-32 mx-auto"
+              />
             </div>
-          </div>
-          <div>
-            <p className="text-xl">Contact Us</p>
-            <div className="flex flex-col items-start mt-5 space-y-2">
-              <span className="inline-flex gap-2">
-                <MdLocationOn className="lg:w-10 lg:h-10 w-5 h-5 fill-primary" />
-                <span>
-                  593 Jacqueline Dr, Garsfontein, Pretoria, 0042, South Africa
-                </span>
-              </span>
-              <span className="inline-flex gap-2">
-                <HiPhone className="w-5 h-5 fill-primary" />
-                <a href="">0797809807</a>
-              </span>
-              <span className="inline-flex gap-2">
-                <HiMail className="w-5 h-5 fill-primary" />
-                <a href="">info@jvhartgallery.co.za</a>
-              </span>
-            </div>
-          </div>
-          <div>
-            <p className="text-xl">Follow Us</p>
-
-            <div className="mt-5">
-              <a
-                href="/facebook"
-                className="inline-block rounded-full bg-white p-2"
-              >
-                <FaFacebook className="w-5 h-5 fill-primary" />
-              </a>
-            </div>
+            <ul className="basis-9/12 font-medium flex w-full justify-between">
+              <li className="basis-1/5">
+                <h4 className="text-lg">Links</h4>
+              </li>
+              <li className="basis-1/5">
+                <h4 className="text-lg">Services</h4>
+              </li>
+              <li className="basis-2/5">
+                <h4 className="text-lg">Contact</h4>
+              </li>
+              <li className="basis-1/5">
+                <h4 className="text-lg">Follow us</h4>
+              </li>
+            </ul>
           </div>
         </div>
-        <hr className="my-6 border-gray-700 h-2" />
-        <div className="sm:flex sm:items-center sm:justify-between flex-col gap-2 lg:gap-0 lg:flex-row text-sm">
-          <div className="flex gap-4 hover:cursor-pointer">
-            <a
-              href="/privacy-policy"
-              className="hover:underline hover:text-primary"
-            >
-              Privacy Policy
-            </a>
-            |
-            <a
-              href="terms-and-conditions"
-              className="hover:underline hover:text-primary"
-            >
-              Terms & Conditions
-            </a>
+      </div>
+      <div className=" bg-footer text-white">
+        <div className="max-w-7xl ml-auto pb-8">
+          <div className="flex py-4 gap-10 items-center">
+            <div className="basis-3/12 py-1 bg-footer">
+              <p className="">
+                Streamlining Global Logistics Solutions for Seamless Supply
+                Chains. Delivering Efficiency and Reliability Worldwide.
+              </p>
+            </div>
+            <ul className="basis-9/12 flex w-full justify-between">
+              <li className="basis-1/5">
+                <ul className="space-y-4">
+                  <li>
+                    <Link href={"/"}>Home</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>About us</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Services</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Our Team</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Contact</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="basis-1/5">
+                <ul className="space-y-4">
+                  <li>
+                    <Link href={"/"}>Facilitation</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Coordination</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Air Service Licensing</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Consultation</Link>
+                  </li>
+                  <li>
+                    <Link href={"/"}>Supplies</Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="basis-2/5">
+                <ul className="space-y-4">
+                  <li className="flex gap-2">
+                    <MdOutlineMail className="w-6 h-6" />
+                    <Link href={"/"}>pravesh@yplogistics.co.za</Link>
+                  </li>
+                  <li className="flex gap-2">
+                    <FiPhone className="w-6 h-6" />
+                    <Link href={"/"}>
+                      Tel: +27 11 466 8681 <br /> Fax: +27 11 318 2047
+                    </Link>
+                  </li>
+                  <li className="flex gap-2">
+                    <IoLocationOutline className="w-6 h-6" />
+                    <Link href={"/"}>
+                      3 Monte Carlo Crescent | Kyalami <br />
+                      Business Park | Kyalami Boulevard
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="basis-1/5">
+                <div className="flex gap-4">
+                  <Link href={"/"}>
+                    <FaFacebook className="w-8 h-8" />
+                  </Link>
+                  <Link href={"/"}>
+                    <FaTwitter className="w-8 h-8" />
+                  </Link>
+                  <Link href={"/"}>
+                    <FaLinkedin className="w-8 h-8" />
+                  </Link>
+                </div>
+              </li>
+            </ul>
           </div>
-          <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
-            Copyright © 2023. All rights reserved.
-          </p>
-          <p className="font-sans lg:p-8 text-start md:text-center md:p-4">
-            Crafted by:{" "}
-            <a href="https://www.mrrobotdev.com" className="hover:underline">
-              mrrobotdev.com
-            </a>
-          </p>
+        </div>
+        <hr className="bg-transparent border-t border-white/50" />
+        <div className="  py-4 mx-auto max-w-6xl flex justify-between">
+          <p>Copyright © Y & P Logistics | All Rights Reserved</p>
+          <p>Crafted by mrrobotdev.com</p>
         </div>
       </div>
     </footer>

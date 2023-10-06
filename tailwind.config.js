@@ -8,8 +8,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      sans: ["var(--font-sans)"],
-      display: ["var(--font-display)"],
+      display: ["var(--font-sans)"],
+      sans: ["var(--font-display)"],
     },
     colors: {
       transparent: colors.transparent,
